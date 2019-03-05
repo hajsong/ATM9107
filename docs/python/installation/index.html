@@ -23,7 +23,7 @@ if (!doNotTrack) {
 
     <link rel="icon" href="/ATM9107/images/favicon.png" type="image/png">
 
-    <title>Tags :: Ocean Modeling</title>
+    <title>Installation :: Ocean Modeling</title>
 
     
     <link href="/ATM9107/css/nucleus.css?1551756777" rel="stylesheet">
@@ -48,7 +48,7 @@ if (!doNotTrack) {
     </style>
     
   </head>
-  <body class="" data-url="/ATM9107/tags/">
+  <body class="" data-url="/ATM9107/python/installation/">
     <nav id="sidebar" class="">
 
 
@@ -159,7 +159,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/ATM9107/python/" title="Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -210,8 +210,8 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/ATM9107/python/installation/" title="Installation" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/ATM9107/python/installation/">
@@ -319,14 +319,31 @@ if (!doNotTrack) {
                   <span class="links">
                  
                  
-                   Tags 
+                   Installation 
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-acquire-anaconda-or-miniconda">1. Acquire Anaconda (or Miniconda)</a>
+<ul>
+<li><a href="#anaconda-or-miniconda-from-conda-manual">Anaconda or Miniconda? (from conda manual)</a></li>
+</ul></li>
+<li><a href="#2-verify-that-you-have-python">2. Verify that you have python</a></li>
+<li><a href="#3-install-packages">3. Install packages</a></li>
+<li><a href="#4-ipython-and-jupyter-notebook">4. Ipython and Jupyter notebook</a></li>
+<li><a href="#5-jupyter-notebook-on-the-remote-server">5. Jupyter notebook on the remote server</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -338,12 +355,133 @@ if (!doNotTrack) {
         
         <div id="body-inner">
           
-            <h1>Tags</h1>
+            <h1>Installation</h1>
           
 
         
 
 
+
+
+<p>The instructions are based on using the Anaconda software distribution, which provides platform-independent package management for Python and other software in self-contained user-specific environments.</p>
+
+<h3 id="1-acquire-anaconda-or-miniconda">1. Acquire Anaconda (or Miniconda)</h3>
+
+<p><strong>This is highly recommended.</strong></p>
+
+<p>Download the Anaconda software from <a href="https://www.anaconda.com/download/#macos">https://www.anaconda.com/download/#macos</a><br />
+Document for the software can be found <a href="https://conda.io/docs/user-guide/install/download.html?highlight=miniconda#anaconda-or-miniconda">here</a></p>
+
+<p>If you choose to go with something light, you may consider getting <a href="https://conda.io/miniconda.html">miniconda</a>.</p>
+
+<h4 id="anaconda-or-miniconda-from-conda-manual">Anaconda or Miniconda? (from conda manual)</h4>
+
+<p>Choose Anaconda if you:</p>
+
+<ul>
+<li>Are new to conda or Python.</li>
+<li>Like the convenience of having Python and over 150 scientific packages automatically installed at once.</li>
+<li>Have the time and disk space—a few minutes and 300 MB.</li>
+<li>Do not want to individually install each of the packages you want to use.</li>
+</ul>
+
+<p>Choose Miniconda if you:</p>
+
+<ul>
+<li>Do not mind installing each of the packages you want to use individually.</li>
+<li>Do not have time or disk space to install over 150 packages at once.</li>
+<li>Want fast access to Python and the conda commands and you wish to sort out the other programs later.</li>
+</ul>
+
+<h3 id="2-verify-that-you-have-python">2. Verify that you have python</h3>
+
+<pre><code>$ which python
+$ python --version
+</code></pre>
+
+<p>which dump out the following output in my case:</p>
+
+<pre><code>/Users/hajsong/anaconda3/bin/python
+Python 3.7.0
+</code></pre>
+
+<p>If you want to install different version of python (e.g. python 3.6), you can create a new environment where python 3.6 becomes default version.</p>
+
+<pre><code>conda create -n py36 python=3.6 anaconda
+</code></pre>
+
+<p>To activate this environment, use:</p>
+
+<pre><code>source activate py36
+</code></pre>
+
+<p>To deactivate an active environment, use:</p>
+
+<pre><code>source deactivate
+</code></pre>
+
+<p>In window,</p>
+
+<pre><code>activate myenv
+deactivate
+</code></pre>
+
+<p>If you want to remove the environment &lsquo;py36&rsquo;, try</p>
+
+<pre><code>conda remove --name py36 --all
+</code></pre>
+
+<h3 id="3-install-packages">3. Install packages</h3>
+
+<p>It is easy to manage (install and update) packages with Anaconda (or Miniconda).
+For instance, if you want to install numpy package,</p>
+
+<pre><code>conda install numpy
+</code></pre>
+
+<p>If you want to update numpy package,</p>
+
+<pre><code>conda update numpy
+</code></pre>
+
+<h3 id="4-ipython-and-jupyter-notebook">4. Ipython and Jupyter notebook</h3>
+
+<p><a href="https://ipython.org/index.html">Ipython</a> provides an interactive environment for doing python.<br />
+It is included in the Anaconda software and you can visit its <a href="http://ipython.readthedocs.io/en/stable/">document page</a>.</p>
+
+<p>If you want to launch Jupyter notebook in one of your environments (e.g. py36), activate that environment first before starting Jupyter notebook.</p>
+
+<p>To launch ipython, just do</p>
+
+<pre><code>ipython
+</code></pre>
+
+<p>To launch Jupyter notebook, type</p>
+
+<pre><code>jupyter notebook
+</code></pre>
+
+<h3 id="5-jupyter-notebook-on-the-remote-server">5. Jupyter notebook on the remote server</h3>
+
+<p>You might experience the delay of bringing the figure that you made remotely up on your local machine.
+This pain can be alleviated if you run Jupyter notebook on the remote server.
+Instead of opening up the web browser on the remote server, you can request the export the content to the port.</p>
+
+<p>To do this, launch Jupyter notebook on the remote server as the following.</p>
+
+<pre><code>jupyter notebook --no-browser --port=8889
+</code></pre>
+
+<p>You can change the number for the port.</p>
+
+<p>Then, on your local machine, connect to your server and receive the data by typing the following command.</p>
+
+<pre><code>ssh -N -f -L localhost:8899:localhost:8889 [yourid]@[server_address]
+</code></pre>
+
+<p>Make sure that the second localhost number match the one on the remote server.
+Then, open up the web browser and go to &ldquo;localhost:8899&rdquo; by typing it in the address section.
+The web browser might ask the password, and it appears on the terminal where you launch Jupyter notebook.</p>
 
 
 <footer class=" footline" >
@@ -432,6 +570,7 @@ if (!doNotTrack) {
             
                 
                     
+                    
                 
                 
 
@@ -446,6 +585,9 @@ if (!doNotTrack) {
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -463,6 +605,7 @@ if (!doNotTrack) {
             
                 
                     
+                    
                 
                 
 
@@ -478,6 +621,9 @@ if (!doNotTrack) {
             
             
                 
+                    
+                        
+                        
                     
                 
                 

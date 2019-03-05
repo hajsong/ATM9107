@@ -23,7 +23,7 @@ if (!doNotTrack) {
 
     <link rel="icon" href="/ATM9107/images/favicon.png" type="image/png">
 
-    <title>Tags :: Ocean Modeling</title>
+    <title>Python :: Ocean Modeling</title>
 
     
     <link href="/ATM9107/css/nucleus.css?1551756777" rel="stylesheet">
@@ -48,7 +48,7 @@ if (!doNotTrack) {
     </style>
     
   </head>
-  <body class="" data-url="/ATM9107/tags/">
+  <body class="" data-url="/ATM9107/python/about/">
     <nav id="sidebar" class="">
 
 
@@ -159,7 +159,7 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/ATM9107/python/" title="Python" class="dd-item 
-        
+        parent
         
         
         ">
@@ -186,8 +186,8 @@ if (!doNotTrack) {
   
     
     <li data-nav-id="/ATM9107/python/about/" title="Python" class="dd-item 
-        
-        
+        parent
+        active
         
         ">
       <a href="/ATM9107/python/about/">
@@ -319,14 +319,33 @@ if (!doNotTrack) {
                   <span class="links">
                  
                  
-                   Tags 
+                   Python 
                  
                   </span>
                 </div>
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#a-quick-introduction-to-python-and-its-packages">A quick introduction to python and its packages</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#matlab-and-python">Matlab and Python</a></li>
+<li><a href="#why-use-python-instead-of-matlab">Why use Python instead of Matlab?</a></li>
+<li><a href="#what-are-the-potential-disadvantages">What are the potential disadvantages?</a></li>
+<li><a href="#the-python-scientific-stack-for-oceanography">The Python scientific stack for oceanography</a>
+<ul>
+<li><a href="#essentials">Essentials</a></li>
+<li><a href="#other-packages-of-interest">Other packages of interest</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -338,12 +357,123 @@ if (!doNotTrack) {
         
         <div id="body-inner">
           
-            <h1>Tags</h1>
+            <h1>Python</h1>
           
 
         
 
 
+
+
+<h3 id="a-quick-introduction-to-python-and-its-packages">A quick introduction to python and its packages</h3>
+
+<p>For more detailed information, see <a href="https://currents.soest.hawaii.edu/ocn760_4/basics.html">here</a><br />
+For a quick start, refer <a href="https://learnxinyminutes.com/docs/python/">here</a></p>
+
+<h3 id="introduction">Introduction</h3>
+
+<ul>
+<li>Python has been gaining solid ground in earth sciences community.</li>
+<li>Python is light and efficient, while is able to do most of things that Matlab offers.</li>
+</ul>
+
+<p>During the last couple of decades, Matlab has been the most commonly-used scripting language in physical oceanography, and it has a large user base in many other fields. Recently, however, Python has been gaining ground, often being adopted by former Matlab users as well as by newcomers. Here is a little background to help you understand this shift, and why we advocate using Python from the start.</p>
+
+<h3 id="matlab-and-python">Matlab and Python</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Matlab</th>
+<th align="center">Python</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">expensive</td>
+<td align="center">Free</td>
+</tr>
+
+<tr>
+<td align="center">Well-documented</td>
+<td align="center">Major packages are well-documented</td>
+</tr>
+
+<tr>
+<td align="center">A wide range of functions is included</td>
+<td align="center">Packages needs to be installed individually</td>
+</tr>
+
+<tr>
+<td align="center">Possibly more consistency within it</td>
+<td align="center">Possible inconsistency between packages</td>
+</tr>
+
+<tr>
+<td align="center">fast</td>
+<td align="center">Faster!!!</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="why-use-python-instead-of-matlab">Why use Python instead of Matlab?</h3>
+
+<p>Python is fundamentally a better computer language in many ways.
+It is suitable for a wider variety of tasks.
+It scales better from the shortest of scripts to large software projects.
+It facilitates writing clearer and more concise code.
+With associated tools, it makes for easier access to existing high-performance codes in compiled languages, and for using smaller pieces of compiled code to speed up critical sections.
+Because Python is Free and Open Source Software (FOSS), you can install it on any machine without having to deal with a license manager.
+For the same reason, Python code that is part of a research project can be run by anyone, anywhere, to verify or extend the results.
+Most Python packages you are likely to want to use are developed in an open environment. The scientific Python ecosystem is dynamic and friendly.</p>
+
+<h3 id="what-are-the-potential-disadvantages">What are the potential disadvantages?</h3>
+
+<p>Installation of all the packages one needs can take time and expertise; but distributions like Anaconda, combined with other improvements in python packaging software and repositories, are rapidly solving this problem.
+Although progress is being made, the scientific Python stack is not as uniformly well-documented as Matlab; it might take longer to figure out how to do something in Python. You might also find that a routine available in Matlab is not yet available in a Python package.
+Matlab is still mainstream in oceanography–at least among many of the old guard; with Python, you are an early adopter. (If you have a spirit of adventure, this might be considered an advantage.)</p>
+
+<p>Matlab evolved from a simple scripting language designed to provide interactive access to a public-domain linear algebra library. It has since grown into a more sophisticated but still specialized language with an extensive set of routines written, organized, and documented by one of the great successes in the software world, Mathworks.</p>
+
+<p>Python, in contrast, was designed by a computer scientist as a general-purpose scripting language for easy adoption and widespread use. People tried it and liked it, and the result is that it is widely used throughout the software world, for all sorts of tasks, large and small. There is a vast array of Python packages that arem freely available to do all sorts of things—including the sorts of things that oceanographers and other scientists do; but these packages are not neatly bound up in a single product, and the documentation for the language itself and for the packages is similarly scattered and of varying quality.</p>
+
+<h3 id="the-python-scientific-stack-for-oceanography">The Python scientific stack for oceanography</h3>
+
+<h4 id="essentials">Essentials</h4>
+
+<ul>
+<li><p>numpy -
+N-dimensional arrays and functions for working with them. This is the heart of the scientific stack for Python.</p></li>
+
+<li><p>matplotlib -
+A two-dimensional plotting library with a Matlab-like interface.</p></li>
+
+<li><p>IPython -
+An interactive shell, and much more.</p></li>
+
+<li><p>jupyter notebook -
+A web interface to IPython, with integrated plots and rich text, including equations. (It can also be used with languages like R and Julia.)</p></li>
+
+<li><p>scipy -
+A large number of functions for statistics, linear algebra, integration, etc. It also includes functions for reading and writing Matlab’s binary matfiles.</p></li>
+</ul>
+
+<h4 id="other-packages-of-interest">Other packages of interest</h4>
+
+<ul>
+<li><p>pandas -
+Data structures inspired by R (Series, DataFrame, Panel), with associated functionality for fast and sophisticated indexing, subsetting, and calculations.</p></li>
+
+<li><p>Cython -
+A language with augmented Python syntax for writing compiled Python extensions. I use it for writing interfaces to code written in C, and for writing extensions to speed up critical operations.</p></li>
+
+<li><p>basemap -
+Matplotlib toolkit for making maps with any of a wide variety of projections. Matplotlib’s full plotting capabilities can then be used on the map.</p></li>
+
+<li><p>netCDF4 -
+Python interface to the NetCDF libraries, supporting the new version 4 in addition to the widespread version 3, and also supporting access to datasets via OPeNDAP.</p></li>
+</ul>
 
 
 <footer class=" footline" >
@@ -432,6 +562,7 @@ if (!doNotTrack) {
             
                 
                     
+                    
                 
                 
 
@@ -446,6 +577,7 @@ if (!doNotTrack) {
             
             
                 
+                    
                     
                 
                 
@@ -462,6 +594,9 @@ if (!doNotTrack) {
             
             
                 
+                    
+                        
+                        
                     
                 
                 
