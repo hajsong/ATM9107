@@ -6,9 +6,19 @@
     <description>Recent content in ATM2106 on Ocean Modeling</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Tue, 12 Mar 2019 12:54:59 +0900</lastBuildDate>
     
 	<atom:link href="https://hajsong.github.io/ATM9107/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 2</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week2/</link>
+      <pubDate>Tue, 12 Mar 2019 12:54:59 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week2/</guid>
+      <description>Week 2 1D Stommel model : Link</description>
+    </item>
     
   </channel>
 </rss>

@@ -14,6 +14,13 @@
 	"content": "This is a tentative schedule and can be changed as we progress the semester.\n  week  content  lecture note  homework    1   Introduction      2   Numerical methods (parabolic, hyperbolic, ..)      3   Equation of motion      4   Shallow water model, 1D      5   Shallow water model, 2D      6   Quasi-geostrophic model 1      7   Quasi-geostrophic model 2      8   Midterm Exam      9   Ocean General circulation model, gyre      10   Ocean General circulation model, global ocean     11   Eddy parameterization      12   Ocean General circulation model, mixing      13   Ocean General circulation model, regional simulation      14   Lagrangian / Eulerian model      15   Model analysis : Budget analysis      16   Final week      "
 },
 {
+	"uri": "https://hajsong.github.io/ATM9107/lectures/week2/",
+	"title": "Week 2",
+	"tags": [],
+	"description": "",
+	"content": " Week 2 1D Stommel model : Link\n"
+},
+{
 	"uri": "https://hajsong.github.io/ATM9107/python/installation/",
 	"title": "Installation",
 	"tags": [],
