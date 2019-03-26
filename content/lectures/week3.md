@@ -5,6 +5,8 @@ weight = 3
 chapter = false
 +++
 
-### Week 2
+### Week 3
 
-NPZ model can be obtained from [this link](https://colab.research.google.com/drive/1-Rfq2viL8O37fCYadnBNGUuf8vl2AL16)
++ NPZ model can be obtained from [this link](https://colab.research.google.com/drive/1-Rfq2viL8O37fCYadnBNGUuf8vl2AL16)
+
++ The derivation of Runge-Kutta methods : [pdf](/ATM9107/images/lec5.pdf)
