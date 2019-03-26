@@ -39,7 +39,7 @@
 	"title": "Week 3",
 	"tags": [],
 	"description": "",
-	"content": " Week 2  NPZ model can be obtained from this link\n The derivation of Runge-Kutta methods : pdf\n  "
+	"content": " Week 3  NPZ model can be obtained from this link\n The derivation of Runge-Kutta methods : pdf\n  "
 },
 {
 	"uri": "https://hajsong.github.io/ATM9107/python/basics/",
@@ -54,6 +54,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Homework problems will be uploaded here. "
+},
+{
+	"uri": "https://hajsong.github.io/ATM9107/lectures/week4/",
+	"title": "Week4",
+	"tags": [],
+	"description": "",
+	"content": " Week 4  A link to the inertial oscillation example  "
 },
 {
 	"uri": "https://hajsong.github.io/ATM9107/python/",

@@ -26,9 +26,18 @@
       <pubDate>Tue, 19 Mar 2019 09:38:43 +0900</pubDate>
       
       <guid>https://hajsong.github.io/ATM9107/lectures/week3/</guid>
-      <description> Week 2  NPZ model can be obtained from this link
+      <description> Week 3  NPZ model can be obtained from this link
  The derivation of Runge-Kutta methods : pdf
   </description>
+    </item>
+    
+    <item>
+      <title>Week4</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week4/</link>
+      <pubDate>Tue, 26 Mar 2019 12:40:16 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week4/</guid>
+      <description> Week 4  A link to the inertial oscillation example  </description>
     </item>
     
   </channel>
