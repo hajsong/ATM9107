@@ -40,5 +40,14 @@
       <description> Week 4  A link to the inertial oscillation example  </description>
     </item>
     
+    <item>
+      <title>Week 5</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week5/</link>
+      <pubDate>Tue, 09 Apr 2019 12:20:46 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week5/</guid>
+      <description> Week 5  A link to the 1D wave example A link to the 2D SWE example  </description>
+    </item>
+    
   </channel>
 </rss>
