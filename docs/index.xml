@@ -49,5 +49,14 @@
       <description> Week 5  A link to the 1D wave example A link to the 2D SWE example  </description>
     </item>
     
+    <item>
+      <title>Week6</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week6/</link>
+      <pubDate>Tue, 16 Apr 2019 14:29:26 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week6/</guid>
+      <description> QG model  code to play : python code  </description>
+    </item>
+    
   </channel>
 </rss>
