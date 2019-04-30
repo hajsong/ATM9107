@@ -50,12 +50,21 @@
     </item>
     
     <item>
-      <title>Week6</title>
-      <link>https://hajsong.github.io/ATM9107/lectures/week6/</link>
+      <title>Week 7</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week7/</link>
       <pubDate>Tue, 16 Apr 2019 14:29:26 +0900</pubDate>
       
-      <guid>https://hajsong.github.io/ATM9107/lectures/week6/</guid>
+      <guid>https://hajsong.github.io/ATM9107/lectures/week7/</guid>
       <description> QG model  code to play : python code  </description>
+    </item>
+    
+    <item>
+      <title>Week 9</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week9/</link>
+      <pubDate>Tue, 30 Apr 2019 12:54:05 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week9/</guid>
+      <description> More of the QG model  An example jupyter notebook  </description>
     </item>
     
   </channel>
