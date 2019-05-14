@@ -69,5 +69,16 @@
       <description> More of the QG model  An example jupyter notebook  </description>
     </item>
     
+    <item>
+      <title>Week 11</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week11/</link>
+      <pubDate>Tue, 14 May 2019 14:50:00 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week11/</guid>
+      <description> MITgcm closed basin examples  MITgcm barotropic gyre : link
+ MITgcm baroclinic gyre : link
+  </description>
+    </item>
+    
   </channel>
 </rss>
