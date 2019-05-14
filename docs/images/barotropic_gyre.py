@@ -339,6 +339,9 @@ h=plt.loglog(k,kepower[:,-1])
 
 # what if both $\beta=0$ and $A_h$ = 100 m$^2$ s$^{-1}$?
 
+# Run the simulation again after reducing the grid space to 10 km.
+# Then, run two simulations: one with the default $A_h$, and the other with $A_h = 100$ m$^2$ s$^{-1}$. (keep $\beta = 10e-11)
+
 # What if we use sperical polar grid?
 # 
 # ```
