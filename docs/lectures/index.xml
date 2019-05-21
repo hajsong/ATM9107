@@ -80,7 +80,7 @@
  data.diagnostics : link
  DIAGNOSTICS_SIZE.h : link
  Gyre and tracer : link
- Global ocean
+ Global ocean : link
   </description>
     </item>
     
