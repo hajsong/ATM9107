@@ -18,22 +18,55 @@
 #  fileFlags(n)     : specific code (8c string) for output file "n"
 #--------------------
  &DIAGNOSTICS_LIST
-   fields(1,1) = 'ETAN    ',
-   fileName(1) = 'Diags/eta',
-  frequency(1) = 2592000.,
+   fields(1:1,1) = 'ETAN    ',
+   fileName(1) = 'Diags/ssh',
+  frequency(1) = -31104000.,
+  timePhase(1) = 0.,
 
-   fields(1,2) = 'ETAN    ',
-   fileName(2) = 'Diags/eta_s',
-  frequency(2) = -2592000.,
+  fields(1:2,2) = 'GM_PsiX ','GM_PsiY ',
+   fileName(2) = 'Diags/GMvel',
+  frequency(2) = 31104000.,
   timePhase(2) = 0.,
 
-   fields(1:3,3) = 'UVEL    ','VVEL    ','WVEL    ',
-   fileName(3) = 'Diags/vel',
-  frequency(3) = 2592000.,
+  fields(1:3,3) = 'UVELMASS','VVELMASS','WVELMASS',
+   fileName(3) = 'Diags/Velmass',
+  frequency(3) = 31104000.,
+  timePhase(3) = 0.,
 
-   fields(1:2,4) = 'THETA   ','RHOAnoma',
-   fileName(4) = 'Diags/theta',
-  frequency(4) = 2592000.,
+  fields(1:2,4) = 'THETA   ','SALT    ',
+   fileName(4) = 'Diags/TandS',
+  frequency(4) = 31104000.,
+  timePhase(4) = 0.,
+  
+  fields(1:1,5) = 'TRAC01  ',
+   fileName(5) = 'Diags/TRAC01',
+  frequency(5) = 31104000.,
+  timePhase(5) = 0.,
+
+  fields(1:4,6) = 'oceFWflx','oceQnet ','TFLUX   ','SFLUX   ',
+  fileName(6) = 'Diags/sfcfrc',
+  frequency(6) = 31104000.,
+  timePhase(6) = 0.,
+
+  fields(1:4,7) = 'TOTTTEND','ADVr_TH ','ADVx_TH ','ADVy_TH ',
+  fileName(7) = 'Diags/Tbudget1',
+  frequency(7) = 31104000.,
+  timePhase(7) = 0.,
+
+  fields(1:5,8) = 'DFrE_TH ','DFrI_TH ','DFxE_TH ','DFyE_TH ','WTHMASS ',
+  fileName(8) = 'Diags/Tbudget2',
+  frequency(8) = 31104000.,
+  timePhase(8) = 0.,
+
+  fields(1:4,9) = 'TOTSTEND','ADVr_SLT','ADVx_SLT','ADVy_SLT',
+  fileName(9) = 'Diags/Sbudget1',
+  frequency(9) = 31104000.,
+  timePhase(9) = 0.,
+
+  fields(1:5,10) = 'DFrE_SLT','DFrI_SLT','DFxE_SLT','DFyE_SLT','WSLTMASS',
+  fileName(10) = 'Diags/Sbudget2',
+  frequency(10) = 31104000.,
+  timePhase(10) = 0.,
  &
 
 #--------------------
@@ -54,12 +87,12 @@
 #                (see "available_diagnostics.log" file for the full list of diags)
 #--------------------
  &DIAG_STATIS_PARMS
- stat_fields(1,1) = 'ETAN    ',
+ stat_fields(1,1) = 'TRAC01  ',
   stat_fName(1) = 'statTRAC01',
-   stat_freq(1) = 259200.,
+   stat_freq(1) = 31104000.,
   stat_phase(1) = 0.,
- stat_fields(1,2) = 'ETAN    ',
+ stat_fields(1,2) = 'TRAC01  ',
   stat_fName(2) = 'statTRAC01ss',
-   stat_freq(2) = -259200.,
+   stat_freq(2) = -31104000.,
   stat_phase(2) = 0.,
  &
