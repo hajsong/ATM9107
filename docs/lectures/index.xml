@@ -41,18 +41,6 @@
     </item>
     
     <item>
-      <title>Week12</title>
-      <link>https://hajsong.github.io/ATM9107/lectures/week12/</link>
-      <pubDate>Tue, 21 May 2019 14:40:04 +0900</pubDate>
-      
-      <guid>https://hajsong.github.io/ATM9107/lectures/week12/</guid>
-      <description> MITgcm 4 degree global ocean  Global ocean : link
- data.diagnostics
- Jupyter notebook file for the analysis: Link (python version)
-  Modifying heat flux file with open(&#39;../run/ncep_qnet.bin&#39;,&#39;rb&#39;) as f: data = np.fromfile(f, &#39;&amp;gt;f4&#39;) qflx = data.reshape(12, ny, nx) # I know that this is monthly forcing data. ndata = qflx[:,:,:]/2 fs = open(&#39;new_qflx.bin&#39;,&#39;wb&#39;); ndata.astype(&#39;&amp;gt;f4&#39;).tofile(fs);  </description>
-    </item>
-    
-    <item>
       <title>Week 5</title>
       <link>https://hajsong.github.io/ATM9107/lectures/week5/</link>
       <pubDate>Tue, 09 Apr 2019 12:20:46 +0900</pubDate>
@@ -93,6 +81,18 @@
  DIAGNOSTICS_SIZE.h : link
  Gyre and tracer : link
   </description>
+    </item>
+    
+    <item>
+      <title>Week12</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week12/</link>
+      <pubDate>Tue, 21 May 2019 14:40:04 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week12/</guid>
+      <description> MITgcm 4 degree global ocean  Global ocean : link
+ data.diagnostics
+ Jupyter notebook file for the analysis: Link (python version)
+  Modifying heat flux file with open(&#39;../run/ncep_qnet.bin&#39;,&#39;rb&#39;) as f: data = np.fromfile(f, &#39;&amp;gt;f4&#39;) qflx = data.reshape(12, ny, nx) # I know that this is monthly forcing data. ndata = qflx[:,:,:]/2 fs = open(&#39;new_qflx.bin&#39;,&#39;wb&#39;); ndata.astype(&#39;&amp;gt;f4&#39;).tofile(fs);  </description>
     </item>
     
   </channel>
