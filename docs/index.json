@@ -112,6 +112,13 @@
 	"content": " MITgcm 4 degree global ocean  Global ocean : link\n data.diagnostics\n Jupyter notebook file for the analysis: Link (python version)\n  Modifying heat flux file with open('../run/ncep_qnet.bin','rb') as f: data = np.fromfile(f, '\u0026gt;f4') qflx = data.reshape(12, ny, nx) # I know that this is monthly forcing data. ndata = qflx[:,:,:]/2 fs = open('new_qflx.bin','wb'); ndata.astype('\u0026gt;f4').tofile(fs);  "
 },
 {
+	"uri": "https://hajsong.github.io/ATM9107/lectures/week13/",
+	"title": "Week 13",
+	"tags": [],
+	"description": "",
+	"content": " Analyzing the data from the cubed sphere model  python tool python examples  "
+},
+{
 	"uri": "https://hajsong.github.io/ATM9107/",
 	"title": "ATM2106",
 	"tags": [],

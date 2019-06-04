@@ -95,5 +95,14 @@
   Modifying heat flux file with open(&#39;../run/ncep_qnet.bin&#39;,&#39;rb&#39;) as f: data = np.fromfile(f, &#39;&amp;gt;f4&#39;) qflx = data.reshape(12, ny, nx) # I know that this is monthly forcing data. ndata = qflx[:,:,:]/2 fs = open(&#39;new_qflx.bin&#39;,&#39;wb&#39;); ndata.astype(&#39;&amp;gt;f4&#39;).tofile(fs);  </description>
     </item>
     
+    <item>
+      <title>Week 13</title>
+      <link>https://hajsong.github.io/ATM9107/lectures/week13/</link>
+      <pubDate>Tue, 04 Jun 2019 12:49:28 +0900</pubDate>
+      
+      <guid>https://hajsong.github.io/ATM9107/lectures/week13/</guid>
+      <description> Analyzing the data from the cubed sphere model  python tool python examples  </description>
+    </item>
+    
   </channel>
 </rss>
